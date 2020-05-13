@@ -3,8 +3,6 @@ module.exports = {
 	description: 'Welcomes new users.',
 	execute(msg, args) {
         const welcomeChannel = msg.guild.channels.cache.find(ch => ch.name === 'welcome-goodbye');
-        //const welcomeChannel = msg.channel;
-        //const getTime = new Date().toISOString().replace(/T/, ' ').replace(/\..+/, '');
         function intToDay(num) {
             switch (num) {
                 case 0: currDay = 'Sunday'; break;
